@@ -6,7 +6,7 @@ if [ $_source_ = "y" ]; then
     sudo sed -i.bak 's@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g' /etc/apt/sources.list
 fi
 sudo apt update
-sudo apt install -y zsh neofetch docker nginx git ranger bat tldr rust-fd-find lsd duf zoxide btop
+sudo apt install -y zsh neofetch docker nginx git ranger bat tldr rust-fd-find lsd duf zoxide btop nmap
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
