@@ -12,7 +12,7 @@ if [ $_source_ = "y" ]; then
          /etc/yum.repos.d/fedora-updates-modular.repo
 fi
 sudo yum update
-sudo dnf install --assumeyes zsh neofetch docker nginx git ranger bat tldr rust-fd-find lsd duf zoxide
+sudo dnf install --assumeyes zsh neofetch docker nginx git ranger bat tldr rust-fd-find lsd duf zoxide btop
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
